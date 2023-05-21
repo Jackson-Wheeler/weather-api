@@ -26,7 +26,7 @@ const myPromise = new Promise(async (resolve, reject) => {
         reject(error);
     }
 });
-
+let existingTime = [];
 myPromise
     .then(result => {
         console.log(result);
@@ -39,6 +39,11 @@ myPromise
             let hours = time.getHours();
             let minute = time.getMinutes();
             time = `${hours}:${minute}`;
+            if (existingTime.includes(time)){
+                continue;
+            }else{
+                existingTime.push(time);
+            }
             let humidity = entry['humidity'];
             inputChart(time, humidity, temp);
         }
