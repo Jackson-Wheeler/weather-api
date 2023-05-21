@@ -12,7 +12,7 @@ from starlette.middleware.cors import CORSMiddleware
 from dbClass import dbClass
 from common import *
 
-weather_fetch_delay = 10
+weather_fetch_delay = 60*60
 
 app = FastAPI()
 

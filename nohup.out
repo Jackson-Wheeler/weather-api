@@ -1,27 +1,9 @@
 INFO:     Will watch for changes in these directories: ['/var/www/html/group03']
 INFO:     Uvicorn running on http://localhost:8003 (Press CTRL+C to quit)
-INFO:     Started reloader process [795372] using StatReload
+INFO:     Started reloader process [796322] using StatReload
 connect to main DB
 connecting to DB...
-INFO:     Started server process [795381]
-INFO:     Waiting for application startup.
-INFO:     Application startup complete.
-WARNING:  StatReload detected changes in 'main.py'. Reloading...
-INFO:     Shutting down
-INFO:     Waiting for application shutdown.
-INFO:     Application shutdown complete.
-INFO:     Finished server process [795381]
-connect to main DB
-connecting to DB...
-connect to main DB
-connecting to DB...
-Making Weather API Call
-{'coord': {'lon': 126.9918, 'lat': 37.5519}, 'weather': [{'id': 803, 'main': 'Clouds', 'description': 'broken clouds', 'icon': '04d'}], 'base': 'stations', 'main': {'temp': 67.75, 'feels_like': 66.47, 'temp_min': 60.28, 'temp_max': 72.82, 'pressure': 1009, 'humidity': 48}, 'visibility': 10000, 'wind': {'speed': 9.22, 'deg': 260}, 'clouds': {'all': 75}, 'dt': 1684654037, 'sys': {'type': 1, 'id': 8096, 'country': 'KR', 'sunrise': 1684613933, 'sunset': 1684665513}, 'timezone': 32400, 'id': 6800746, 'name': 'Kwanghŭi-dong', 'cod': 200}
-DB connection OK
-
-Adding data to DB
-Sucessfully Added
-INFO:     Started server process [795434]
+INFO:     Started server process [796326]
 INFO:     Waiting for application startup.
 INFO:     Application startup complete.
 connect to main DB
@@ -29,253 +11,152 @@ connecting to DB...
 connect to main DB
 connecting to DB...
 Making Weather API Call
-{'coord': {'lon': 126.9918, 'lat': 37.5519}, 'weather': [{'id': 803, 'main': 'Clouds', 'description': 'broken clouds', 'icon': '04d'}], 'base': 'stations', 'main': {'temp': 67.75, 'feels_like': 66.47, 'temp_min': 60.28, 'temp_max': 72.82, 'pressure': 1009, 'humidity': 48}, 'visibility': 10000, 'wind': {'speed': 9.22, 'deg': 260}, 'clouds': {'all': 75}, 'dt': 1684654037, 'sys': {'type': 1, 'id': 8096, 'country': 'KR', 'sunrise': 1684613933, 'sunset': 1684665513}, 'timezone': 32400, 'id': 6800746, 'name': 'Kwanghŭi-dong', 'cod': 200}
+{'coord': {'lon': 126.9918, 'lat': 37.5519}, 'weather': [{'id': 803, 'main': 'Clouds', 'description': 'broken clouds', 'icon': '04d'}], 'base': 'stations', 'main': {'temp': 67.46, 'feels_like': 66.16, 'temp_min': 60.28, 'temp_max': 71.02, 'pressure': 1009, 'humidity': 48}, 'visibility': 10000, 'wind': {'speed': 9.22, 'deg': 260}, 'clouds': {'all': 75}, 'dt': 1684655873, 'sys': {'type': 1, 'id': 8096, 'country': 'KR', 'sunrise': 1684613933, 'sunset': 1684665513}, 'timezone': 32400, 'id': 6800746, 'name': 'Kwanghŭi-dong', 'cod': 200}
 DB connection OK
 
-Adding data to DB
+Adding data to DB - currtime: 2023-05-21 00:57:53
 Sucessfully Added
+
 Making Weather API Call
-{'coord': {'lon': 126.9918, 'lat': 37.5519}, 'weather': [{'id': 803, 'main': 'Clouds', 'description': 'broken clouds', 'icon': '04d'}], 'base': 'stations', 'main': {'temp': 67.75, 'feels_like': 66.47, 'temp_min': 60.28, 'temp_max': 72.82, 'pressure': 1009, 'humidity': 48}, 'visibility': 10000, 'wind': {'speed': 9.22, 'deg': 260}, 'clouds': {'all': 75}, 'dt': 1684654292, 'sys': {'type': 1, 'id': 8096, 'country': 'KR', 'sunrise': 1684613933, 'sunset': 1684665513}, 'timezone': 32400, 'id': 6800746, 'name': 'Kwanghŭi-dong', 'cod': 200}
+{'coord': {'lon': 126.9918, 'lat': 37.5519}, 'weather': [{'id': 803, 'main': 'Clouds', 'description': 'broken clouds', 'icon': '04d'}], 'base': 'stations', 'main': {'temp': 66.45, 'feels_like': 65.34, 'temp_min': 58.48, 'temp_max': 69.22, 'pressure': 1009, 'humidity': 54}, 'visibility': 10000, 'wind': {'speed': 11.5, 'deg': 210}, 'clouds': {'all': 75}, 'dt': 1684659473, 'sys': {'type': 1, 'id': 8096, 'country': 'KR', 'sunrise': 1684613933, 'sunset': 1684665513}, 'timezone': 32400, 'id': 6800746, 'name': 'Kwanghŭi-dong', 'cod': 200}
 DB connection OK
 
-Adding data to DB
+Adding data to DB - currtime: 2023-05-21 01:57:53
 Sucessfully Added
+
 Making Weather API Call
-{'coord': {'lon': 126.9918, 'lat': 37.5519}, 'weather': [{'id': 803, 'main': 'Clouds', 'description': 'broken clouds', 'icon': '04d'}], 'base': 'stations', 'main': {'temp': 67.75, 'feels_like': 66.47, 'temp_min': 60.28, 'temp_max': 72.82, 'pressure': 1009, 'humidity': 48}, 'visibility': 10000, 'wind': {'speed': 9.22, 'deg': 260}, 'clouds': {'all': 75}, 'dt': 1684654292, 'sys': {'type': 1, 'id': 8096, 'country': 'KR', 'sunrise': 1684613933, 'sunset': 1684665513}, 'timezone': 32400, 'id': 6800746, 'name': 'Kwanghŭi-dong', 'cod': 200}
+{'coord': {'lon': 126.9918, 'lat': 37.5519}, 'weather': [{'id': 803, 'main': 'Clouds', 'description': 'broken clouds', 'icon': '04d'}], 'base': 'stations', 'main': {'temp': 63.93, 'feels_like': 62.98, 'temp_min': 58.48, 'temp_max': 67.42, 'pressure': 1009, 'humidity': 63}, 'visibility': 10000, 'wind': {'speed': 9.22, 'deg': 230}, 'clouds': {'all': 75}, 'dt': 1684663073, 'sys': {'type': 1, 'id': 8096, 'country': 'KR', 'sunrise': 1684613933, 'sunset': 1684665513}, 'timezone': 32400, 'id': 6800746, 'name': 'Kwanghŭi-dong', 'cod': 200}
 DB connection OK
 
-Adding data to DB
+Adding data to DB - currtime: 2023-05-21 02:57:53
 Sucessfully Added
+
 Making Weather API Call
-{'coord': {'lon': 126.9918, 'lat': 37.5519}, 'weather': [{'id': 803, 'main': 'Clouds', 'description': 'broken clouds', 'icon': '04d'}], 'base': 'stations', 'main': {'temp': 67.75, 'feels_like': 66.47, 'temp_min': 60.28, 'temp_max': 72.82, 'pressure': 1009, 'humidity': 48}, 'visibility': 10000, 'wind': {'speed': 9.22, 'deg': 260}, 'clouds': {'all': 75}, 'dt': 1684654292, 'sys': {'type': 1, 'id': 8096, 'country': 'KR', 'sunrise': 1684613933, 'sunset': 1684665513}, 'timezone': 32400, 'id': 6800746, 'name': 'Kwanghŭi-dong', 'cod': 200}
+{'coord': {'lon': 126.9918, 'lat': 37.5519}, 'weather': [{'id': 803, 'main': 'Clouds', 'description': 'broken clouds', 'icon': '04n'}], 'base': 'stations', 'main': {'temp': 62.13, 'feels_like': 61.11, 'temp_min': 56.68, 'temp_max': 65.62, 'pressure': 1009, 'humidity': 65}, 'visibility': 10000, 'wind': {'speed': 4.61, 'deg': 220}, 'clouds': {'all': 75}, 'dt': 1684666674, 'sys': {'type': 1, 'id': 8096, 'country': 'KR', 'sunrise': 1684613933, 'sunset': 1684665513}, 'timezone': 32400, 'id': 6800746, 'name': 'Kwanghŭi-dong', 'cod': 200}
 DB connection OK
 
-Adding data to DB
+Adding data to DB - currtime: 2023-05-21 03:57:54
 Sucessfully Added
+
 Making Weather API Call
-{'coord': {'lon': 126.9918, 'lat': 37.5519}, 'weather': [{'id': 803, 'main': 'Clouds', 'description': 'broken clouds', 'icon': '04d'}], 'base': 'stations', 'main': {'temp': 67.75, 'feels_like': 66.47, 'temp_min': 60.28, 'temp_max': 72.82, 'pressure': 1009, 'humidity': 48}, 'visibility': 10000, 'wind': {'speed': 9.22, 'deg': 260}, 'clouds': {'all': 75}, 'dt': 1684654292, 'sys': {'type': 1, 'id': 8096, 'country': 'KR', 'sunrise': 1684613933, 'sunset': 1684665513}, 'timezone': 32400, 'id': 6800746, 'name': 'Kwanghŭi-dong', 'cod': 200}
+{'coord': {'lon': 126.9918, 'lat': 37.5519}, 'weather': [{'id': 803, 'main': 'Clouds', 'description': 'broken clouds', 'icon': '04n'}], 'base': 'stations', 'main': {'temp': 62.06, 'feels_like': 61.07, 'temp_min': 58.48, 'temp_max': 65.62, 'pressure': 1010, 'humidity': 66}, 'visibility': 10000, 'wind': {'speed': 4.61, 'deg': 220}, 'clouds': {'all': 75}, 'dt': 1684670274, 'sys': {'type': 1, 'id': 8096, 'country': 'KR', 'sunrise': 1684613933, 'sunset': 1684665513}, 'timezone': 32400, 'id': 6800746, 'name': 'Kwanghŭi-dong', 'cod': 200}
 DB connection OK
 
-Adding data to DB
+Adding data to DB - currtime: 2023-05-21 04:57:54
 Sucessfully Added
+
 Making Weather API Call
-{'coord': {'lon': 126.9918, 'lat': 37.5519}, 'weather': [{'id': 803, 'main': 'Clouds', 'description': 'broken clouds', 'icon': '04d'}], 'base': 'stations', 'main': {'temp': 67.75, 'feels_like': 66.47, 'temp_min': 60.28, 'temp_max': 72.82, 'pressure': 1009, 'humidity': 48}, 'visibility': 10000, 'wind': {'speed': 9.22, 'deg': 260}, 'clouds': {'all': 75}, 'dt': 1684654292, 'sys': {'type': 1, 'id': 8096, 'country': 'KR', 'sunrise': 1684613933, 'sunset': 1684665513}, 'timezone': 32400, 'id': 6800746, 'name': 'Kwanghŭi-dong', 'cod': 200}
+{'coord': {'lon': 126.9918, 'lat': 37.5519}, 'weather': [{'id': 803, 'main': 'Clouds', 'description': 'broken clouds', 'icon': '04n'}], 'base': 'stations', 'main': {'temp': 61.75, 'feels_like': 60.69, 'temp_min': 56.68, 'temp_max': 63.82, 'pressure': 1010, 'humidity': 65}, 'visibility': 10000, 'wind': {'speed': 3.44, 'deg': 280}, 'clouds': {'all': 75}, 'dt': 1684673874, 'sys': {'type': 1, 'id': 8096, 'country': 'KR', 'sunrise': 1684613933, 'sunset': 1684665513}, 'timezone': 32400, 'id': 6800746, 'name': 'Kwanghŭi-dong', 'cod': 200}
 DB connection OK
 
-Adding data to DB
+Adding data to DB - currtime: 2023-05-21 05:57:54
 Sucessfully Added
+
 Making Weather API Call
-{'coord': {'lon': 126.9918, 'lat': 37.5519}, 'weather': [{'id': 803, 'main': 'Clouds', 'description': 'broken clouds', 'icon': '04d'}], 'base': 'stations', 'main': {'temp': 67.75, 'feels_like': 66.47, 'temp_min': 60.28, 'temp_max': 72.82, 'pressure': 1009, 'humidity': 48}, 'visibility': 10000, 'wind': {'speed': 9.22, 'deg': 260}, 'clouds': {'all': 75}, 'dt': 1684654292, 'sys': {'type': 1, 'id': 8096, 'country': 'KR', 'sunrise': 1684613933, 'sunset': 1684665513}, 'timezone': 32400, 'id': 6800746, 'name': 'Kwanghŭi-dong', 'cod': 200}
+{'coord': {'lon': 126.9918, 'lat': 37.5519}, 'weather': [{'id': 803, 'main': 'Clouds', 'description': 'broken clouds', 'icon': '04n'}], 'base': 'stations', 'main': {'temp': 60.26, 'feels_like': 59.47, 'temp_min': 56.68, 'temp_max': 63.82, 'pressure': 1011, 'humidity': 74}, 'visibility': 10000, 'wind': {'speed': 5.75, 'deg': 310}, 'clouds': {'all': 75}, 'dt': 1684677475, 'sys': {'type': 1, 'id': 8096, 'country': 'KR', 'sunrise': 1684613933, 'sunset': 1684665513}, 'timezone': 32400, 'id': 6800746, 'name': 'Kwanghŭi-dong', 'cod': 200}
 DB connection OK
 
-Adding data to DB
+Adding data to DB - currtime: 2023-05-21 06:57:55
 Sucessfully Added
+
 Making Weather API Call
-{'coord': {'lon': 126.9918, 'lat': 37.5519}, 'weather': [{'id': 803, 'main': 'Clouds', 'description': 'broken clouds', 'icon': '04d'}], 'base': 'stations', 'main': {'temp': 67.75, 'feels_like': 66.47, 'temp_min': 60.28, 'temp_max': 72.82, 'pressure': 1009, 'humidity': 48}, 'visibility': 10000, 'wind': {'speed': 9.22, 'deg': 260}, 'clouds': {'all': 75}, 'dt': 1684654292, 'sys': {'type': 1, 'id': 8096, 'country': 'KR', 'sunrise': 1684613933, 'sunset': 1684665513}, 'timezone': 32400, 'id': 6800746, 'name': 'Kwanghŭi-dong', 'cod': 200}
+{'coord': {'lon': 126.9918, 'lat': 37.5519}, 'weather': [{'id': 803, 'main': 'Clouds', 'description': 'broken clouds', 'icon': '04n'}], 'base': 'stations', 'main': {'temp': 59.95, 'feels_like': 59.13, 'temp_min': 56.68, 'temp_max': 62.02, 'pressure': 1011, 'humidity': 74}, 'visibility': 10000, 'wind': {'speed': 3.44, 'deg': 300}, 'clouds': {'all': 75}, 'dt': 1684681075, 'sys': {'type': 1, 'id': 8096, 'country': 'KR', 'sunrise': 1684613933, 'sunset': 1684665513}, 'timezone': 32400, 'id': 6800746, 'name': 'Kwanghŭi-dong', 'cod': 200}
 DB connection OK
 
-Adding data to DB
+Adding data to DB - currtime: 2023-05-21 07:57:55
 Sucessfully Added
+
 Making Weather API Call
-{'coord': {'lon': 126.9918, 'lat': 37.5519}, 'weather': [{'id': 803, 'main': 'Clouds', 'description': 'broken clouds', 'icon': '04d'}], 'base': 'stations', 'main': {'temp': 67.75, 'feels_like': 66.47, 'temp_min': 60.28, 'temp_max': 72.82, 'pressure': 1009, 'humidity': 48}, 'visibility': 10000, 'wind': {'speed': 9.22, 'deg': 260}, 'clouds': {'all': 75}, 'dt': 1684654292, 'sys': {'type': 1, 'id': 8096, 'country': 'KR', 'sunrise': 1684613933, 'sunset': 1684665513}, 'timezone': 32400, 'id': 6800746, 'name': 'Kwanghŭi-dong', 'cod': 200}
+{'coord': {'lon': 126.9918, 'lat': 37.5519}, 'weather': [{'id': 500, 'main': 'Rain', 'description': 'light rain', 'icon': '10n'}], 'base': 'stations', 'main': {'temp': 59.67, 'feels_like': 58.8, 'temp_min': 56.68, 'temp_max': 60.42, 'pressure': 1010, 'humidity': 74}, 'visibility': 10000, 'wind': {'speed': 2.3, 'deg': 300}, 'rain': {'1h': 0.15}, 'clouds': {'all': 75}, 'dt': 1684684675, 'sys': {'type': 1, 'id': 8096, 'country': 'KR', 'sunrise': 1684700292, 'sunset': 1684751963}, 'timezone': 32400, 'id': 6800746, 'name': 'Kwanghŭi-dong', 'cod': 200}
 DB connection OK
 
-Adding data to DB
+Adding data to DB - currtime: 2023-05-21 08:57:55
 Sucessfully Added
+
 Making Weather API Call
-{'coord': {'lon': 126.9918, 'lat': 37.5519}, 'weather': [{'id': 803, 'main': 'Clouds', 'description': 'broken clouds', 'icon': '04d'}], 'base': 'stations', 'main': {'temp': 67.75, 'feels_like': 66.47, 'temp_min': 60.28, 'temp_max': 72.82, 'pressure': 1009, 'humidity': 48}, 'visibility': 10000, 'wind': {'speed': 9.22, 'deg': 260}, 'clouds': {'all': 75}, 'dt': 1684654292, 'sys': {'type': 1, 'id': 8096, 'country': 'KR', 'sunrise': 1684613933, 'sunset': 1684665513}, 'timezone': 32400, 'id': 6800746, 'name': 'Kwanghŭi-dong', 'cod': 200}
+{'coord': {'lon': 126.9918, 'lat': 37.5519}, 'weather': [{'id': 803, 'main': 'Clouds', 'description': 'broken clouds', 'icon': '04n'}], 'base': 'stations', 'main': {'temp': 58.96, 'feels_like': 58.17, 'temp_min': 56.79, 'temp_max': 60.42, 'pressure': 1010, 'humidity': 77}, 'visibility': 10000, 'wind': {'speed': 4.61, 'deg': 290}, 'clouds': {'all': 75}, 'dt': 1684688276, 'sys': {'type': 1, 'id': 8096, 'country': 'KR', 'sunrise': 1684700292, 'sunset': 1684751963}, 'timezone': 32400, 'id': 6800746, 'name': 'Kwanghŭi-dong', 'cod': 200}
 DB connection OK
 
-Adding data to DB
+Adding data to DB - currtime: 2023-05-21 09:57:56
 Sucessfully Added
+
 Making Weather API Call
-{'coord': {'lon': 126.9918, 'lat': 37.5519}, 'weather': [{'id': 803, 'main': 'Clouds', 'description': 'broken clouds', 'icon': '04d'}], 'base': 'stations', 'main': {'temp': 67.75, 'feels_like': 66.47, 'temp_min': 60.28, 'temp_max': 72.82, 'pressure': 1009, 'humidity': 48}, 'visibility': 10000, 'wind': {'speed': 9.22, 'deg': 260}, 'clouds': {'all': 75}, 'dt': 1684654292, 'sys': {'type': 1, 'id': 8096, 'country': 'KR', 'sunrise': 1684613933, 'sunset': 1684665513}, 'timezone': 32400, 'id': 6800746, 'name': 'Kwanghŭi-dong', 'cod': 200}
+{'coord': {'lon': 126.9918, 'lat': 37.5519}, 'weather': [{'id': 803, 'main': 'Clouds', 'description': 'broken clouds', 'icon': '04n'}], 'base': 'stations', 'main': {'temp': 57.87, 'feels_like': 57.25, 'temp_min': 56.68, 'temp_max': 58.62, 'pressure': 1009, 'humidity': 83}, 'visibility': 10000, 'wind': {'speed': 3.44, 'deg': 200}, 'clouds': {'all': 75}, 'dt': 1684691876, 'sys': {'type': 1, 'id': 8096, 'country': 'KR', 'sunrise': 1684700292, 'sunset': 1684751963}, 'timezone': 32400, 'id': 6800746, 'name': 'Kwanghŭi-dong', 'cod': 200}
 DB connection OK
 
-Adding data to DB
+Adding data to DB - currtime: 2023-05-21 10:57:56
 Sucessfully Added
+
 Making Weather API Call
-{'coord': {'lon': 126.9918, 'lat': 37.5519}, 'weather': [{'id': 803, 'main': 'Clouds', 'description': 'broken clouds', 'icon': '04d'}], 'base': 'stations', 'main': {'temp': 67.75, 'feels_like': 66.47, 'temp_min': 60.28, 'temp_max': 72.82, 'pressure': 1009, 'humidity': 48}, 'visibility': 10000, 'wind': {'speed': 9.22, 'deg': 260}, 'clouds': {'all': 75}, 'dt': 1684654292, 'sys': {'type': 1, 'id': 8096, 'country': 'KR', 'sunrise': 1684613933, 'sunset': 1684665513}, 'timezone': 32400, 'id': 6800746, 'name': 'Kwanghŭi-dong', 'cod': 200}
+{'coord': {'lon': 126.9918, 'lat': 37.5519}, 'weather': [{'id': 761, 'main': 'Dust', 'description': 'dust', 'icon': '50n'}, {'id': 701, 'main': 'Mist', 'description': 'mist', 'icon': '50n'}], 'base': 'stations', 'main': {'temp': 57.87, 'feels_like': 57.25, 'temp_min': 56.68, 'temp_max': 58.62, 'pressure': 1009, 'humidity': 83}, 'visibility': 10000, 'wind': {'speed': 1.14, 'deg': 20}, 'clouds': {'all': 75}, 'dt': 1684695476, 'sys': {'type': 1, 'id': 8096, 'country': 'KR', 'sunrise': 1684700292, 'sunset': 1684751963}, 'timezone': 32400, 'id': 6800746, 'name': 'Kwanghŭi-dong', 'cod': 200}
 DB connection OK
 
-Adding data to DB
+Adding data to DB - currtime: 2023-05-21 11:57:56
 Sucessfully Added
+
 Making Weather API Call
-{'coord': {'lon': 126.9918, 'lat': 37.5519}, 'weather': [{'id': 803, 'main': 'Clouds', 'description': 'broken clouds', 'icon': '04d'}], 'base': 'stations', 'main': {'temp': 67.75, 'feels_like': 66.47, 'temp_min': 60.28, 'temp_max': 72.82, 'pressure': 1009, 'humidity': 48}, 'visibility': 10000, 'wind': {'speed': 9.22, 'deg': 260}, 'clouds': {'all': 75}, 'dt': 1684654292, 'sys': {'type': 1, 'id': 8096, 'country': 'KR', 'sunrise': 1684613933, 'sunset': 1684665513}, 'timezone': 32400, 'id': 6800746, 'name': 'Kwanghŭi-dong', 'cod': 200}
+{'coord': {'lon': 126.9918, 'lat': 37.5519}, 'weather': [{'id': 761, 'main': 'Dust', 'description': 'dust', 'icon': '50n'}, {'id': 701, 'main': 'Mist', 'description': 'mist', 'icon': '50n'}], 'base': 'stations', 'main': {'temp': 57.87, 'feels_like': 57.34, 'temp_min': 56.68, 'temp_max': 58.62, 'pressure': 1008, 'humidity': 85}, 'visibility': 10000, 'wind': {'speed': 2.3, 'deg': 280}, 'clouds': {'all': 75}, 'dt': 1684699077, 'sys': {'type': 1, 'id': 8096, 'country': 'KR', 'sunrise': 1684700292, 'sunset': 1684751963}, 'timezone': 32400, 'id': 6800746, 'name': 'Kwanghŭi-dong', 'cod': 200}
 DB connection OK
 
-Adding data to DB
+Adding data to DB - currtime: 2023-05-21 12:57:57
 Sucessfully Added
-Making Weather API Call
-{'coord': {'lon': 126.9918, 'lat': 37.5519}, 'weather': [{'id': 803, 'main': 'Clouds', 'description': 'broken clouds', 'icon': '04d'}], 'base': 'stations', 'main': {'temp': 67.75, 'feels_like': 66.47, 'temp_min': 60.28, 'temp_max': 72.82, 'pressure': 1009, 'humidity': 48}, 'visibility': 10000, 'wind': {'speed': 9.22, 'deg': 260}, 'clouds': {'all': 75}, 'dt': 1684654292, 'sys': {'type': 1, 'id': 8096, 'country': 'KR', 'sunrise': 1684613933, 'sunset': 1684665513}, 'timezone': 32400, 'id': 6800746, 'name': 'Kwanghŭi-dong', 'cod': 200}
+
+INFO:     70.95.163.60:0 - "GET /health HTTP/1.1" 200 OK
 DB connection OK
 
-Adding data to DB
-Sucessfully Added
-Making Weather API Call
-{'coord': {'lon': 126.9918, 'lat': 37.5519}, 'weather': [{'id': 803, 'main': 'Clouds', 'description': 'broken clouds', 'icon': '04d'}], 'base': 'stations', 'main': {'temp': 67.75, 'feels_like': 66.47, 'temp_min': 60.28, 'temp_max': 72.82, 'pressure': 1009, 'humidity': 48}, 'visibility': 10000, 'wind': {'speed': 9.22, 'deg': 260}, 'clouds': {'all': 75}, 'dt': 1684654292, 'sys': {'type': 1, 'id': 8096, 'country': 'KR', 'sunrise': 1684613933, 'sunset': 1684665513}, 'timezone': 32400, 'id': 6800746, 'name': 'Kwanghŭi-dong', 'cod': 200}
+SELECT * FROM cse191.forecast
+INFO:     70.95.163.60:0 - "GET /list-forecast HTTP/1.1" 200 OK
 DB connection OK
 
-Adding data to DB
-Sucessfully Added
-Making Weather API Call
-{'coord': {'lon': 126.9918, 'lat': 37.5519}, 'weather': [{'id': 803, 'main': 'Clouds', 'description': 'broken clouds', 'icon': '04d'}], 'base': 'stations', 'main': {'temp': 67.75, 'feels_like': 66.47, 'temp_min': 60.28, 'temp_max': 72.82, 'pressure': 1009, 'humidity': 48}, 'visibility': 10000, 'wind': {'speed': 9.22, 'deg': 260}, 'clouds': {'all': 75}, 'dt': 1684654292, 'sys': {'type': 1, 'id': 8096, 'country': 'KR', 'sunrise': 1684613933, 'sunset': 1684665513}, 'timezone': 32400, 'id': 6800746, 'name': 'Kwanghŭi-dong', 'cod': 200}
+SELECT * FROM cse191.forecast WHERE groupname=3foldCord
+The error '(1054, "Unknown column '3foldCord' in 'where clause'")' occured
+INFO:     70.95.163.60:0 - "GET /list-forecast?gn=3foldCord HTTP/1.1" 500 Internal Server Error
+ERROR:    Exception in ASGI application
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.8/dist-packages/uvicorn/protocols/http/h11_impl.py", line 429, in run_asgi
+    result = await app(  # type: ignore[func-returns-value]
+  File "/usr/local/lib/python3.8/dist-packages/uvicorn/middleware/proxy_headers.py", line 78, in __call__
+    return await self.app(scope, receive, send)
+  File "/usr/local/lib/python3.8/dist-packages/fastapi/applications.py", line 276, in __call__
+    await super().__call__(scope, receive, send)
+  File "/usr/local/lib/python3.8/dist-packages/starlette/applications.py", line 122, in __call__
+    await self.middleware_stack(scope, receive, send)
+  File "/usr/local/lib/python3.8/dist-packages/starlette/middleware/errors.py", line 184, in __call__
+    raise exc
+  File "/usr/local/lib/python3.8/dist-packages/starlette/middleware/errors.py", line 162, in __call__
+    await self.app(scope, receive, _send)
+  File "/usr/local/lib/python3.8/dist-packages/starlette/middleware/cors.py", line 84, in __call__
+    await self.app(scope, receive, send)
+  File "/usr/local/lib/python3.8/dist-packages/starlette/middleware/exceptions.py", line 79, in __call__
+    raise exc
+  File "/usr/local/lib/python3.8/dist-packages/starlette/middleware/exceptions.py", line 68, in __call__
+    await self.app(scope, receive, sender)
+  File "/usr/local/lib/python3.8/dist-packages/fastapi/middleware/asyncexitstack.py", line 21, in __call__
+    raise e
+  File "/usr/local/lib/python3.8/dist-packages/fastapi/middleware/asyncexitstack.py", line 18, in __call__
+    await self.app(scope, receive, send)
+  File "/usr/local/lib/python3.8/dist-packages/starlette/routing.py", line 718, in __call__
+    await route.handle(scope, receive, send)
+  File "/usr/local/lib/python3.8/dist-packages/starlette/routing.py", line 276, in handle
+    await self.app(scope, receive, send)
+  File "/usr/local/lib/python3.8/dist-packages/starlette/routing.py", line 66, in app
+    response = await func(request)
+  File "/usr/local/lib/python3.8/dist-packages/fastapi/routing.py", line 237, in app
+    raw_response = await run_endpoint_function(
+  File "/usr/local/lib/python3.8/dist-packages/fastapi/routing.py", line 165, in run_endpoint_function
+    return await run_in_threadpool(dependant.call, **values)
+  File "/usr/local/lib/python3.8/dist-packages/starlette/concurrency.py", line 41, in run_in_threadpool
+    return await anyio.to_thread.run_sync(func, *args)
+  File "/usr/local/lib/python3.8/dist-packages/anyio/to_thread.py", line 31, in run_sync
+    return await get_asynclib().run_sync_in_worker_thread(
+  File "/usr/local/lib/python3.8/dist-packages/anyio/_backends/_asyncio.py", line 937, in run_sync_in_worker_thread
+    return await future
+  File "/usr/local/lib/python3.8/dist-packages/anyio/_backends/_asyncio.py", line 867, in run
+    result = context.run(func, *args)
+  File "/var/www/html/group03/main.py", line 57, in process_forecast
+    dl_string = forecast_list.to_json(orient="records")
+TypeError: to_json() missing 1 required positional argument: 'self'
 DB connection OK
 
-Adding data to DB
-Sucessfully Added
-Making Weather API Call
-{'coord': {'lon': 126.9918, 'lat': 37.5519}, 'weather': [{'id': 803, 'main': 'Clouds', 'description': 'broken clouds', 'icon': '04d'}], 'base': 'stations', 'main': {'temp': 67.75, 'feels_like': 66.47, 'temp_min': 60.28, 'temp_max': 72.82, 'pressure': 1009, 'humidity': 48}, 'visibility': 10000, 'wind': {'speed': 9.22, 'deg': 260}, 'clouds': {'all': 75}, 'dt': 1684654292, 'sys': {'type': 1, 'id': 8096, 'country': 'KR', 'sunrise': 1684613933, 'sunset': 1684665513}, 'timezone': 32400, 'id': 6800746, 'name': 'Kwanghŭi-dong', 'cod': 200}
-DB connection OK
-
-Adding data to DB
-Sucessfully Added
-Making Weather API Call
-{'coord': {'lon': 126.9918, 'lat': 37.5519}, 'weather': [{'id': 803, 'main': 'Clouds', 'description': 'broken clouds', 'icon': '04d'}], 'base': 'stations', 'main': {'temp': 67.75, 'feels_like': 66.47, 'temp_min': 60.28, 'temp_max': 72.82, 'pressure': 1009, 'humidity': 48}, 'visibility': 10000, 'wind': {'speed': 9.22, 'deg': 260}, 'clouds': {'all': 75}, 'dt': 1684654292, 'sys': {'type': 1, 'id': 8096, 'country': 'KR', 'sunrise': 1684613933, 'sunset': 1684665513}, 'timezone': 32400, 'id': 6800746, 'name': 'Kwanghŭi-dong', 'cod': 200}
-DB connection OK
-
-Adding data to DB
-Sucessfully Added
-Making Weather API Call
-{'coord': {'lon': 126.9918, 'lat': 37.5519}, 'weather': [{'id': 803, 'main': 'Clouds', 'description': 'broken clouds', 'icon': '04d'}], 'base': 'stations', 'main': {'temp': 67.75, 'feels_like': 66.47, 'temp_min': 60.28, 'temp_max': 72.82, 'pressure': 1009, 'humidity': 48}, 'visibility': 10000, 'wind': {'speed': 9.22, 'deg': 260}, 'clouds': {'all': 75}, 'dt': 1684654292, 'sys': {'type': 1, 'id': 8096, 'country': 'KR', 'sunrise': 1684613933, 'sunset': 1684665513}, 'timezone': 32400, 'id': 6800746, 'name': 'Kwanghŭi-dong', 'cod': 200}
-DB connection OK
-
-Adding data to DB
-Sucessfully Added
-Making Weather API Call
-{'coord': {'lon': 126.9918, 'lat': 37.5519}, 'weather': [{'id': 803, 'main': 'Clouds', 'description': 'broken clouds', 'icon': '04d'}], 'base': 'stations', 'main': {'temp': 67.75, 'feels_like': 66.47, 'temp_min': 60.28, 'temp_max': 72.82, 'pressure': 1009, 'humidity': 48}, 'visibility': 10000, 'wind': {'speed': 9.22, 'deg': 260}, 'clouds': {'all': 75}, 'dt': 1684654292, 'sys': {'type': 1, 'id': 8096, 'country': 'KR', 'sunrise': 1684613933, 'sunset': 1684665513}, 'timezone': 32400, 'id': 6800746, 'name': 'Kwanghŭi-dong', 'cod': 200}
-DB connection OK
-
-Adding data to DB
-Sucessfully Added
-Making Weather API Call
-{'coord': {'lon': 126.9918, 'lat': 37.5519}, 'weather': [{'id': 803, 'main': 'Clouds', 'description': 'broken clouds', 'icon': '04d'}], 'base': 'stations', 'main': {'temp': 67.75, 'feels_like': 66.47, 'temp_min': 60.28, 'temp_max': 72.82, 'pressure': 1009, 'humidity': 48}, 'visibility': 10000, 'wind': {'speed': 9.22, 'deg': 260}, 'clouds': {'all': 75}, 'dt': 1684654292, 'sys': {'type': 1, 'id': 8096, 'country': 'KR', 'sunrise': 1684613933, 'sunset': 1684665513}, 'timezone': 32400, 'id': 6800746, 'name': 'Kwanghŭi-dong', 'cod': 200}
-DB connection OK
-
-Adding data to DB
-Sucessfully Added
-Making Weather API Call
-{'coord': {'lon': 126.9918, 'lat': 37.5519}, 'weather': [{'id': 803, 'main': 'Clouds', 'description': 'broken clouds', 'icon': '04d'}], 'base': 'stations', 'main': {'temp': 67.75, 'feels_like': 66.47, 'temp_min': 60.28, 'temp_max': 72.82, 'pressure': 1009, 'humidity': 48}, 'visibility': 10000, 'wind': {'speed': 9.22, 'deg': 260}, 'clouds': {'all': 75}, 'dt': 1684654292, 'sys': {'type': 1, 'id': 8096, 'country': 'KR', 'sunrise': 1684613933, 'sunset': 1684665513}, 'timezone': 32400, 'id': 6800746, 'name': 'Kwanghŭi-dong', 'cod': 200}
-DB connection OK
-
-Adding data to DB
-Sucessfully Added
-Making Weather API Call
-{'coord': {'lon': 126.9918, 'lat': 37.5519}, 'weather': [{'id': 803, 'main': 'Clouds', 'description': 'broken clouds', 'icon': '04d'}], 'base': 'stations', 'main': {'temp': 67.75, 'feels_like': 66.47, 'temp_min': 60.28, 'temp_max': 72.82, 'pressure': 1009, 'humidity': 48}, 'visibility': 10000, 'wind': {'speed': 9.22, 'deg': 260}, 'clouds': {'all': 75}, 'dt': 1684654292, 'sys': {'type': 1, 'id': 8096, 'country': 'KR', 'sunrise': 1684613933, 'sunset': 1684665513}, 'timezone': 32400, 'id': 6800746, 'name': 'Kwanghŭi-dong', 'cod': 200}
-DB connection OK
-
-Adding data to DB
-Sucessfully Added
-Making Weather API Call
-{'coord': {'lon': 126.9918, 'lat': 37.5519}, 'weather': [{'id': 803, 'main': 'Clouds', 'description': 'broken clouds', 'icon': '04d'}], 'base': 'stations', 'main': {'temp': 67.75, 'feels_like': 66.47, 'temp_min': 60.28, 'temp_max': 72.82, 'pressure': 1009, 'humidity': 48}, 'visibility': 10000, 'wind': {'speed': 9.22, 'deg': 260}, 'clouds': {'all': 75}, 'dt': 1684654292, 'sys': {'type': 1, 'id': 8096, 'country': 'KR', 'sunrise': 1684613933, 'sunset': 1684665513}, 'timezone': 32400, 'id': 6800746, 'name': 'Kwanghŭi-dong', 'cod': 200}
-DB connection OK
-
-Adding data to DB
-Sucessfully Added
-Making Weather API Call
-{'coord': {'lon': 126.9918, 'lat': 37.5519}, 'weather': [{'id': 803, 'main': 'Clouds', 'description': 'broken clouds', 'icon': '04d'}], 'base': 'stations', 'main': {'temp': 67.75, 'feels_like': 66.47, 'temp_min': 60.28, 'temp_max': 72.82, 'pressure': 1009, 'humidity': 48}, 'visibility': 10000, 'wind': {'speed': 9.22, 'deg': 260}, 'clouds': {'all': 75}, 'dt': 1684654292, 'sys': {'type': 1, 'id': 8096, 'country': 'KR', 'sunrise': 1684613933, 'sunset': 1684665513}, 'timezone': 32400, 'id': 6800746, 'name': 'Kwanghŭi-dong', 'cod': 200}
-DB connection OK
-
-Adding data to DB
-Sucessfully Added
-Making Weather API Call
-{'coord': {'lon': 126.9918, 'lat': 37.5519}, 'weather': [{'id': 803, 'main': 'Clouds', 'description': 'broken clouds', 'icon': '04d'}], 'base': 'stations', 'main': {'temp': 67.75, 'feels_like': 66.47, 'temp_min': 60.28, 'temp_max': 72.82, 'pressure': 1009, 'humidity': 48}, 'visibility': 10000, 'wind': {'speed': 9.22, 'deg': 260}, 'clouds': {'all': 75}, 'dt': 1684654292, 'sys': {'type': 1, 'id': 8096, 'country': 'KR', 'sunrise': 1684613933, 'sunset': 1684665513}, 'timezone': 32400, 'id': 6800746, 'name': 'Kwanghŭi-dong', 'cod': 200}
-DB connection OK
-
-Adding data to DB
-Sucessfully Added
-Making Weather API Call
-WARNING:  StatReload detected changes in 'dbClass.py'. Reloading...
-INFO:     Shutting down
-INFO:     Waiting for application shutdown.
-INFO:     Application shutdown complete.
-INFO:     Finished server process [795434]
-{'coord': {'lon': 126.9918, 'lat': 37.5519}, 'weather': [{'id': 803, 'main': 'Clouds', 'description': 'broken clouds', 'icon': '04d'}], 'base': 'stations', 'main': {'temp': 67.75, 'feels_like': 66.47, 'temp_min': 60.28, 'temp_max': 72.82, 'pressure': 1009, 'humidity': 48}, 'visibility': 10000, 'wind': {'speed': 9.22, 'deg': 260}, 'clouds': {'all': 75}, 'dt': 1684654292, 'sys': {'type': 1, 'id': 8096, 'country': 'KR', 'sunrise': 1684613933, 'sunset': 1684665513}, 'timezone': 32400, 'id': 6800746, 'name': 'Kwanghŭi-dong', 'cod': 200}
-DB connection OK
-
-Adding data to DB
-Sucessfully Added
-Making Weather API Call
-{'coord': {'lon': 126.9918, 'lat': 37.5519}, 'weather': [{'id': 803, 'main': 'Clouds', 'description': 'broken clouds', 'icon': '04d'}], 'base': 'stations', 'main': {'temp': 67.75, 'feels_like': 66.47, 'temp_min': 60.28, 'temp_max': 72.82, 'pressure': 1009, 'humidity': 48}, 'visibility': 10000, 'wind': {'speed': 9.22, 'deg': 260}, 'clouds': {'all': 75}, 'dt': 1684654292, 'sys': {'type': 1, 'id': 8096, 'country': 'KR', 'sunrise': 1684613933, 'sunset': 1684665513}, 'timezone': 32400, 'id': 6800746, 'name': 'Kwanghŭi-dong', 'cod': 200}
-DB connection OK
-
-Adding data to DB
-Sucessfully Added
-Making Weather API Call
-{'coord': {'lon': 126.9918, 'lat': 37.5519}, 'weather': [{'id': 803, 'main': 'Clouds', 'description': 'broken clouds', 'icon': '04d'}], 'base': 'stations', 'main': {'temp': 67.75, 'feels_like': 66.47, 'temp_min': 60.28, 'temp_max': 72.82, 'pressure': 1009, 'humidity': 48}, 'visibility': 10000, 'wind': {'speed': 9.22, 'deg': 260}, 'clouds': {'all': 75}, 'dt': 1684654292, 'sys': {'type': 1, 'id': 8096, 'country': 'KR', 'sunrise': 1684613933, 'sunset': 1684665513}, 'timezone': 32400, 'id': 6800746, 'name': 'Kwanghŭi-dong', 'cod': 200}
-DB connection OK
-
-Adding data to DB
-Sucessfully Added
-Making Weather API Call
-{'coord': {'lon': 126.9918, 'lat': 37.5519}, 'weather': [{'id': 803, 'main': 'Clouds', 'description': 'broken clouds', 'icon': '04d'}], 'base': 'stations', 'main': {'temp': 67.75, 'feels_like': 66.47, 'temp_min': 60.28, 'temp_max': 72.82, 'pressure': 1009, 'humidity': 48}, 'visibility': 10000, 'wind': {'speed': 9.22, 'deg': 260}, 'clouds': {'all': 75}, 'dt': 1684654292, 'sys': {'type': 1, 'id': 8096, 'country': 'KR', 'sunrise': 1684613933, 'sunset': 1684665513}, 'timezone': 32400, 'id': 6800746, 'name': 'Kwanghŭi-dong', 'cod': 200}
-DB connection OK
-
-Adding data to DB
-Sucessfully Added
-Making Weather API Call
-{'coord': {'lon': 126.9918, 'lat': 37.5519}, 'weather': [{'id': 803, 'main': 'Clouds', 'description': 'broken clouds', 'icon': '04d'}], 'base': 'stations', 'main': {'temp': 67.75, 'feels_like': 66.47, 'temp_min': 60.28, 'temp_max': 72.82, 'pressure': 1009, 'humidity': 48}, 'visibility': 10000, 'wind': {'speed': 9.22, 'deg': 260}, 'clouds': {'all': 75}, 'dt': 1684654292, 'sys': {'type': 1, 'id': 8096, 'country': 'KR', 'sunrise': 1684613933, 'sunset': 1684665513}, 'timezone': 32400, 'id': 6800746, 'name': 'Kwanghŭi-dong', 'cod': 200}
-DB connection OK
-
-Adding data to DB
-Sucessfully Added
-Making Weather API Call
-{'coord': {'lon': 126.9918, 'lat': 37.5519}, 'weather': [{'id': 803, 'main': 'Clouds', 'description': 'broken clouds', 'icon': '04d'}], 'base': 'stations', 'main': {'temp': 67.75, 'feels_like': 66.47, 'temp_min': 60.28, 'temp_max': 72.82, 'pressure': 1009, 'humidity': 48}, 'visibility': 10000, 'wind': {'speed': 9.22, 'deg': 260}, 'clouds': {'all': 75}, 'dt': 1684654292, 'sys': {'type': 1, 'id': 8096, 'country': 'KR', 'sunrise': 1684613933, 'sunset': 1684665513}, 'timezone': 32400, 'id': 6800746, 'name': 'Kwanghŭi-dong', 'cod': 200}
-DB connection OK
-
-Adding data to DB
-Sucessfully Added
-Making Weather API Call
-{'coord': {'lon': 126.9918, 'lat': 37.5519}, 'weather': [{'id': 803, 'main': 'Clouds', 'description': 'broken clouds', 'icon': '04d'}], 'base': 'stations', 'main': {'temp': 67.75, 'feels_like': 66.47, 'temp_min': 60.28, 'temp_max': 72.82, 'pressure': 1009, 'humidity': 48}, 'visibility': 10000, 'wind': {'speed': 9.22, 'deg': 260}, 'clouds': {'all': 75}, 'dt': 1684654292, 'sys': {'type': 1, 'id': 8096, 'country': 'KR', 'sunrise': 1684613933, 'sunset': 1684665513}, 'timezone': 32400, 'id': 6800746, 'name': 'Kwanghŭi-dong', 'cod': 200}
-DB connection OK
-
-Adding data to DB
-Sucessfully Added
-INFO:     Started server process [795608]
-INFO:     Waiting for application startup.
-INFO:     Application startup complete.
-INFO:     Shutting down
-INFO:     Waiting for application shutdown.
-INFO:     Application shutdown complete.
-INFO:     Finished server process [795608]
-connect to main DB
-connecting to DB...
-connect to main DB
-connecting to DB...
-Making Weather API Call
-{'coord': {'lon': 126.9918, 'lat': 37.5519}, 'weather': [{'id': 803, 'main': 'Clouds', 'description': 'broken clouds', 'icon': '04d'}], 'base': 'stations', 'main': {'temp': 67.75, 'feels_like': 66.47, 'temp_min': 60.28, 'temp_max': 72.82, 'pressure': 1009, 'humidity': 48}, 'visibility': 10000, 'wind': {'speed': 9.22, 'deg': 260}, 'clouds': {'all': 75}, 'dt': 1684654292, 'sys': {'type': 1, 'id': 8096, 'country': 'KR', 'sunrise': 1684613933, 'sunset': 1684665513}, 'timezone': 32400, 'id': 6800746, 'name': 'Kwanghŭi-dong', 'cod': 200}
-DB connection OK
-
-Making Weather API Call
-{'coord': {'lon': 126.9918, 'lat': 37.5519}, 'weather': [{'id': 803, 'main': 'Clouds', 'description': 'broken clouds', 'icon': '04d'}], 'base': 'stations', 'main': {'temp': 67.75, 'feels_like': 66.47, 'temp_min': 60.28, 'temp_max': 72.82, 'pressure': 1009, 'humidity': 48}, 'visibility': 10000, 'wind': {'speed': 9.22, 'deg': 260}, 'clouds': {'all': 75}, 'dt': 1684654292, 'sys': {'type': 1, 'id': 8096, 'country': 'KR', 'sunrise': 1684613933, 'sunset': 1684665513}, 'timezone': 32400, 'id': 6800746, 'name': 'Kwanghŭi-dong', 'cod': 200}
-DB connection OK
-
-Making Weather API Call
-{'coord': {'lon': 126.9918, 'lat': 37.5519}, 'weather': [{'id': 803, 'main': 'Clouds', 'description': 'broken clouds', 'icon': '04d'}], 'base': 'stations', 'main': {'temp': 67.75, 'feels_like': 66.47, 'temp_min': 60.28, 'temp_max': 72.82, 'pressure': 1009, 'humidity': 48}, 'visibility': 10000, 'wind': {'speed': 9.22, 'deg': 260}, 'clouds': {'all': 75}, 'dt': 1684654292, 'sys': {'type': 1, 'id': 8096, 'country': 'KR', 'sunrise': 1684613933, 'sunset': 1684665513}, 'timezone': 32400, 'id': 6800746, 'name': 'Kwanghŭi-dong', 'cod': 200}
-DB connection OK
-
-Making Weather API Call
-{'coord': {'lon': 126.9918, 'lat': 37.5519}, 'weather': [{'id': 803, 'main': 'Clouds', 'description': 'broken clouds', 'icon': '04d'}], 'base': 'stations', 'main': {'temp': 67.75, 'feels_like': 66.47, 'temp_min': 60.28, 'temp_max': 72.82, 'pressure': 1009, 'humidity': 48}, 'visibility': 10000, 'wind': {'speed': 9.22, 'deg': 260}, 'clouds': {'all': 75}, 'dt': 1684654292, 'sys': {'type': 1, 'id': 8096, 'country': 'KR', 'sunrise': 1684613933, 'sunset': 1684665513}, 'timezone': 32400, 'id': 6800746, 'name': 'Kwanghŭi-dong', 'cod': 200}
-DB connection OK
-
-Making Weather API Call
-{'coord': {'lon': 126.9918, 'lat': 37.5519}, 'weather': [{'id': 803, 'main': 'Clouds', 'description': 'broken clouds', 'icon': '04d'}], 'base': 'stations', 'main': {'temp': 67.75, 'feels_like': 66.47, 'temp_min': 60.28, 'temp_max': 72.82, 'pressure': 1009, 'humidity': 48}, 'visibility': 10000, 'wind': {'speed': 9.22, 'deg': 260}, 'clouds': {'all': 75}, 'dt': 1684654292, 'sys': {'type': 1, 'id': 8096, 'country': 'KR', 'sunrise': 1684613933, 'sunset': 1684665513}, 'timezone': 32400, 'id': 6800746, 'name': 'Kwanghŭi-dong', 'cod': 200}
-DB connection OK
-
-Making Weather API Call
-{'coord': {'lon': 126.9918, 'lat': 37.5519}, 'weather': [{'id': 803, 'main': 'Clouds', 'description': 'broken clouds', 'icon': '04d'}], 'base': 'stations', 'main': {'temp': 67.75, 'feels_like': 66.47, 'temp_min': 60.28, 'temp_max': 72.82, 'pressure': 1009, 'humidity': 48}, 'visibility': 10000, 'wind': {'speed': 9.22, 'deg': 260}, 'clouds': {'all': 75}, 'dt': 1684654292, 'sys': {'type': 1, 'id': 8096, 'country': 'KR', 'sunrise': 1684613933, 'sunset': 1684665513}, 'timezone': 32400, 'id': 6800746, 'name': 'Kwanghŭi-dong', 'cod': 200}
-DB connection OK
-
-Making Weather API Call
-{'coord': {'lon': 126.9918, 'lat': 37.5519}, 'weather': [{'id': 803, 'main': 'Clouds', 'description': 'broken clouds', 'icon': '04d'}], 'base': 'stations', 'main': {'temp': 67.75, 'feels_like': 66.47, 'temp_min': 60.28, 'temp_max': 72.82, 'pressure': 1009, 'humidity': 48}, 'visibility': 10000, 'wind': {'speed': 9.22, 'deg': 260}, 'clouds': {'all': 75}, 'dt': 1684654292, 'sys': {'type': 1, 'id': 8096, 'country': 'KR', 'sunrise': 1684613933, 'sunset': 1684665513}, 'timezone': 32400, 'id': 6800746, 'name': 'Kwanghŭi-dong', 'cod': 200}
-DB connection OK
-
-Making Weather API Call
-{'coord': {'lon': 126.9918, 'lat': 37.5519}, 'weather': [{'id': 803, 'main': 'Clouds', 'description': 'broken clouds', 'icon': '04d'}], 'base': 'stations', 'main': {'temp': 67.75, 'feels_like': 66.47, 'temp_min': 60.28, 'temp_max': 72.82, 'pressure': 1009, 'humidity': 48}, 'visibility': 10000, 'wind': {'speed': 9.22, 'deg': 260}, 'clouds': {'all': 75}, 'dt': 1684654292, 'sys': {'type': 1, 'id': 8096, 'country': 'KR', 'sunrise': 1684613933, 'sunset': 1684665513}, 'timezone': 32400, 'id': 6800746, 'name': 'Kwanghŭi-dong', 'cod': 200}
-DB connection OK
-
-Making Weather API Call
-{'coord': {'lon': 126.9918, 'lat': 37.5519}, 'weather': [{'id': 803, 'main': 'Clouds', 'description': 'broken clouds', 'icon': '04d'}], 'base': 'stations', 'main': {'temp': 67.75, 'feels_like': 66.47, 'temp_min': 60.28, 'temp_max': 72.82, 'pressure': 1009, 'humidity': 48}, 'visibility': 10000, 'wind': {'speed': 9.22, 'deg': 260}, 'clouds': {'all': 75}, 'dt': 1684654292, 'sys': {'type': 1, 'id': 8096, 'country': 'KR', 'sunrise': 1684613933, 'sunset': 1684665513}, 'timezone': 32400, 'id': 6800746, 'name': 'Kwanghŭi-dong', 'cod': 200}
-DB connection OK
-
-INFO:     Stopping reloader process [795372]
+SELECT * FROM cse191.forecast
+INFO:     70.95.163.60:0 - "GET /list-forecast HTTP/1.1" 200 OK
