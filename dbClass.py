@@ -81,10 +81,11 @@ class dbClass:
     def loadWeather(self, gn):
         if self.check_conn():
             weather_df = pd.DataFrame
-            if (gn is None):
-                sqlStr = "SELECT * FROM cse191.forecast"
-            else:
-                sqlStr = "SELECT * FROM cse191.forecast WHERE groupname='{0}' AND zipcode='01000'".format(gn)
+            # if (gn is None):
+            #     sqlStr = "SELECT * FROM cse191.forecast"
+            # else:
+            groupname = "3foldCord"
+            sqlStr = "SELECT * FROM cse191.forecast WHERE groupname='{0}' AND zipcode='01000'".format(groupname)
             print(sqlStr)
             cursor = self.db.cursor()
             result = None

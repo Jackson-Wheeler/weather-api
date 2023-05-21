@@ -16,7 +16,7 @@ fetch('http://localhost:8003/list-forecast')
 let array = [['Time', 'Humidity', 'Temperature']];
 const myPromise = new Promise(async (resolve, reject) => {
     try{
-        const response = await fetch('http://localhost:8003/list-forecast');
+        const response = await fetch('http://cse191.ucsd.edu/api03/list-forecast');
         if (!response.ok){
             throw new Error('Request failed with status ' + response.status);
         }
