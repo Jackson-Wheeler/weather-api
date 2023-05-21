@@ -50,7 +50,7 @@ def process_health(response: Response):
     return {"resp": "OK"}
 
 @app.get('/list-forecast', response_class=PlainTextResponse)
-def process_forecast(response: Response, gn: Union[str, None] = None, outtype: Union[str, None] = 'JSON'):
+def process_forecast(response: Response, gn: Union[str, None] = '3foldCord', outtype: Union[str, None] = 'JSON'):
     setHeaders(response)
     forecast_list = cse191db.loadWeather(gn)
     if outtype == "JSON":
