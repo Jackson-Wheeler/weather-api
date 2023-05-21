@@ -10,7 +10,7 @@ from pymysql import Error
 from common import *
 
 
-ssh_tunnel = True
+ssh_tunnel = False
 
 groupname = "3foldCord"
 zipcode = "01000"
@@ -105,8 +105,9 @@ class dbClass:
             forecast_dt = datetime.fromtimestamp(json["dt"]).strftime('%Y-%m-%d %H:%M:%S')
             sunrise_dt = datetime.fromtimestamp(json["sys"]["sunrise"])
             sunset_dt = datetime.fromtimestamp(json["sys"]["sunset"])
+            current_dt = datetime.fromtimestamp(ts).strftime('%Y-%m-%d %H:%M:%S')
 
-            print("Adding data to DB")
+            print("Adding data to DB - currtime: " + current_dt)
             # Make SQL String
             sqlStr = "INSERT INTO cse191.forecast (temperature, humidity, min_temp, max_temp, forecast_ts, groupname, sunrise, sunset, zipcode) "
             sqlStr += "VALUES('{0}','{1}','{2}','{3}','{4}','{5}','{6}','{7}', '{8}');".format(json["main"]["temp"], json["main"]["humidity"], json["main"]["temp_min"], json["main"]["temp_max"], forecast_dt, groupname, sunrise_dt, sunset_dt, zipcode)

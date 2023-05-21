@@ -12,6 +12,8 @@ from starlette.middleware.cors import CORSMiddleware
 from dbClass import dbClass
 from common import *
 
+weather_fetch_delay = 10
+
 app = FastAPI()
 
 cse191db = dbClass()
@@ -59,7 +61,7 @@ def process_forecast(response: Response, gn: Union[str, None] = None, outtype: U
 
 # Repeated event
 @app.on_event("startup")
-@repeat_every(seconds=60*60)
+@repeat_every(seconds=weather_fetch_delay)
 def make_api_call():
     make_weather_api_call()
 
