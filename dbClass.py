@@ -1,4 +1,5 @@
 from time import sleep
+import time
 from datetime import datetime
 
 import pandas as pd
@@ -105,7 +106,7 @@ class dbClass:
             forecast_dt = datetime.fromtimestamp(json["dt"]).strftime('%Y-%m-%d %H:%M:%S')
             sunrise_dt = datetime.fromtimestamp(json["sys"]["sunrise"])
             sunset_dt = datetime.fromtimestamp(json["sys"]["sunset"])
-            current_dt = datetime.fromtimestamp(ts).strftime('%Y-%m-%d %H:%M:%S')
+            current_dt = datetime.fromtimestamp(time.time()).strftime('%Y-%m-%d %H:%M:%S')
 
             print("Adding data to DB - currtime: " + current_dt)
             # Make SQL String

@@ -78,6 +78,7 @@ def make_weather_api_call():
         sleep(60000)
         continue
     print("Sucessfully Added")
+    print()
 
 
 # run the app
