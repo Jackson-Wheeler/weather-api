@@ -1,15 +1,18 @@
 import json
 from typing import Union, List
-# import pandas as pd
+from time import sleep
+import requests
 
 import uvicorn
 from fastapi import FastAPI, Response
 from fastapi.responses import PlainTextResponse
+from fastapi_utils.tasks import repeat_every
 from starlette.middleware.cors import CORSMiddleware
-# from pydantic import BaseModel
 
 from dbClass import dbClass
 from common import *
+
+weather_fetch_delay = 10
 
 app = FastAPI()
 
@@ -56,44 +59,26 @@ def process_forecast(response: Response, gn: Union[str, None] = '3foldCord', out
         dl_string = forecast_list.to_string()
     return dl_string
 
-@app.get('/list-students', response_class=PlainTextResponse)
-def process_list_students(response: Response, gn: Union[int, None] = None, outtype: Union[str, None] = None):
-    setHeaders(response)
-    student_list = cse191db.loadStudents(gn)
-    if outtype == "JSON":
-        sl_string = student_list.to_json(orient="records")
-    else:
-        sl_string = student_list.to_string()
-    return sl_string
-
-@app.get('/list-devices', response_class=PlainTextResponse)
-def process_list_device(response: Response, gn: Union[int, None] = None, outtype: Union[str, None] = None):
-    setHeaders(response)
-    device_list = cse191db.loadDevices(gn)
-    if outtype == "JSON":
-        dl_string = device_list.to_json(orient="records")
-    else:
-        dl_string = device_list.to_string()
-    return dl_string
-
-@app.get('/list-ble-logs', response_class=PlainTextResponse)
-def process_list_ble_logs(response: Response, gn: Union[int, None] = None, outtype: Union[str, None] = None):
-    setHeaders(response)
-    ble_log_list = cse191db.loadBleLogs(gn)
-    if outtype == "JSON":
-        dl_string = ble_log_list.to_json(orient="records")
-    else:
-        dl_string = ble_log_list.to_string()
-    return dl_string
+# Repeated event
+@app.on_event("startup")
+@repeat_every(seconds=weather_fetch_delay)
+def make_api_call():
+    make_weather_api_call()
 
 
-@app.post('/log-devices')
-def process_log_device(response: Response, data: LogInfo):
-    setHeaders(response)  
-    if cse191db.logDevices(data):
-        return {"resp": "OK"}
-    else:
-        return {"resp": "FAIL"}
+def make_weather_api_call():
+    print("Making Weather API Call")
+    api_url = "https://api.openweathermap.org/data/2.5/weather?lat=37.5519&units=imperial&lon=126.9918&appid=0354c29c5e773c46d37727c8a0455d58"
+    response = requests.get(api_url)
+    data_json = response.json()
+    print(data_json)
+    # attempt to add to db until success
+    while not cse191db.add_to_db(data_json):
+        print("Adding to DB failed. Waiting 60 seconds then adding again...")
+        sleep(60000)
+        continue
+    print("Sucessfully Added")
+    print()
 
 
 # run the app
