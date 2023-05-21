@@ -1,4 +1,5 @@
 from time import sleep
+from datetime import datetime
 
 import pandas as pd
 import json
@@ -7,7 +8,12 @@ import sys
 import pymysql
 from pymysql import Error
 from common import *
+
+
 ssh_tunnel = True
+
+groupname = "3foldCord"
+zipcode = "01000"
 
 '''
 for remote access - add HOSTNAME=localhost to env  
@@ -91,95 +97,32 @@ class dbClass:
 
             return weather_df
         
-    def loadStudents(self, gn: int):
+
+    # add JSON of weather data to DB
+    def add_to_db(self, json):
         if self.check_conn():
-            stu_df = pd.DataFrame
-            if (gn is None):
-                sqlStr = "SELECT * FROM cse191.students ORDER BY groupnumber"
-            else:
-                sqlStr = "SELECT * FROM cse191.students WHERE groupnumber={0} ORDER BY groupnumber".format(gn)
-            print(sqlStr)
+            # convert time stamps to date time format
+            forecast_dt = datetime.fromtimestamp(json["dt"]).strftime('%Y-%m-%d %H:%M:%S')
+            sunrise_dt = datetime.fromtimestamp(json["sys"]["sunrise"])
+            sunset_dt = datetime.fromtimestamp(json["sys"]["sunset"])
+
+            print("Adding data to DB")
+            # Make SQL String
+            sqlStr = "INSERT INTO cse191.forecast (temperature, humidity, min_temp, max_temp, forecast_ts, groupname, sunrise, sunset, zipcode) "
+            sqlStr += "VALUES('{0}','{1}','{2}','{3}','{4}','{5}','{6}','{7}', '{8}');".format(json["main"]["temp"], json["main"]["humidity"], json["main"]["temp_min"], json["main"]["temp_max"], forecast_dt, groupname, sunrise_dt, sunset_dt, zipcode)
+
+            # execute sql statement
             cursor = self.db.cursor()
-            result = None
             try:
                 cursor.execute(sqlStr)
                 result = cursor.fetchall()
+                self.db.commit()
                 # print(result)
-                stu_df = pd.DataFrame.from_dict(result) 
-                stu_df.columns=["id","name","email","groupnumber","groupname"]
-                # print(stu_df)
             except Error as e:
                 print(f"The error '{e}' occurred")
-
-            return stu_df
-
-    def loadDevices(self, gn: int):
-        if self.check_conn():
-            dev_df = pd.DataFrame
-            if (gn is None):
-                sqlStr = "SELECT * FROM cse191.devices ORDER BY groupnumber"
-            else:
-                sqlStr = "SELECT * FROM cse191.devices WHERE groupnumber={0} ORDER BY groupnumber".format(gn)
-            print(sqlStr)
-            cursor = self.db.cursor()
-            result = None
-            try:
-                cursor.execute(sqlStr)
-                result = cursor.fetchall()
-                # print(result)
-                dev_df = pd.DataFrame.from_dict(result) 
-                dev_df.columns=["device_id","mac","lastseen_ts","last_rssi","groupname", "location", "lang", "long", "color", "groupnumber"]
-                # print(dev_df)
-            except Error as e:
-                print(f"The error '{e}' occurred")
-
-            return dev_df
-        
-    def loadBleLogs(self, gn: int):
-        if self.check_conn():
-            ble_logs_df = pd.DataFrame
-            if (gn is None):
-                sqlStr = "SELECT * FROM cse191.ble_logs"
-            else:
-                sqlStr = "SELECT * FROM cse191.ble_logs WHERE groupnumber={0}".format(gn)
-            print(sqlStr)
-            cursor = self.db.cursor()
-            result = None
-            try:
-                cursor.execute(sqlStr)
-                result = cursor.fetchall()
-                # print(result)
-                ble_logs_df = pd.DataFrame.from_dict(result) 
-                ble_logs_df.columns=["log_id","device_mac","ble_rssi","ble_mac","groupname", "log_ts", "ble_count"]
-                # print(ble_logs_df)
-            except Error as e:
-                print(f"The error '{e}' occurred")
-
-            return ble_logs_df
-        
-
-            
-        
-
-    def logDevices(self, data: LogInfo):
-        if self.check_conn():
-            groupname = "threefoldCord"
-            dev_df = pd.DataFrame
-            # For each BLEDevice, insert it into DB's ble_logs table
-            for device in data.devices:
-                sqlStr = "INSERT INTO cse191.ble_logs (device_mac, ble_rssi, ble_mac, groupname) VALUES ('{0}', '{1}', '{2}', '{3}');".format(data.espmac, device.rssi, device.mac, groupname)
-                print(sqlStr)
-                cursor = self.db.cursor()
-                try:
-                    cursor.execute(sqlStr)
-                    result = cursor.fetchall()
-                    self.db.commit()
-                    print(result)
-                except Error as e:
-                    print(f"The error '{e}' occurred")
-                    return False
+                return False
             return True
-        # if check_conn() fails
-        else: return False
-
-    
+        # if connection fails
+        else: 
+            print("Connection to Database failed... returning false")
+            return False
