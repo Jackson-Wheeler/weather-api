@@ -77,7 +77,7 @@ class dbClass:
             if (gn is None):
                 sqlStr = "SELECT * FROM cse191.forecast"
             else:
-                sqlStr = "SELECT * FROM cse191.forecast WHERE groupname={0}".format(gn)
+                sqlStr = "SELECT * FROM cse191.forecast WHERE groupname='{0}' AND zipcode='01000'".format(gn)
             print(sqlStr)
             cursor = self.db.cursor()
             result = None

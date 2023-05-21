@@ -13,6 +13,7 @@ fetch('http://localhost:8003/list-forecast')
     .catch(error => {
         console.error('Error:', error);
     });*/
+let array = [['Time', 'Humidity', 'Temperature']];
 const myPromise = new Promise(async (resolve, reject) => {
     try{
         const response = await fetch('http://localhost:8003/list-forecast');
@@ -25,32 +26,37 @@ const myPromise = new Promise(async (resolve, reject) => {
         reject(error);
     }
 });
-let copy;
+
 myPromise
     .then(result => {
         console.log(result);
         copy = JSON.parse(JSON.stringify(result));
+        google.charts.load('current', {'packages':['corechart']});
+        google.charts.setOnLoadCallback(drawChart);
+        for (let entry of copy){
+            let temp = entry['temperature'];
+            let time = new Date(entry['forecast_ts']);
+            let hours = time.getHours();
+            let minute = time.getMinutes();
+            time = `${hours}:${minute}`;
+            let humidity = entry['humidity'];
+            inputChart(time, humidity, temp);
+        }
+        drawChart();
     })
     .catch(error => {
         console.error(error);
     })
-console.log(copy);
 
-google.charts.load('current', {'packages':['corechart']});
-google.charts.setOnLoadCallback(drawChart);
   
+function inputChart(time, humidity, temperature){
+    array.push([time, humidity, temperature]);
+}    
 function drawChart() {
-    var data = google.visualization.arrayToDataTable([
-        ['Year', 'Sales', 'Expenses'],
-        ['2004',  1000,      400],
-        ['2005',  1170,      460],
-        ['2006',  660,       1120],
-        ['2007',  1030,      540],
-        ['2008',  500,       400]
-    ]);
+    var data = google.visualization.arrayToDataTable(array);
   
     var options = {
-        title: 'Company Performance',
+        title: 'Weather of Seoul, Korea',
         curveType: 'function',
         legend: { position: 'bottom' }
     };
